@@ -1,0 +1,65 @@
+.idea/
+.idea
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+*.log
+*.tmp
+*.swp
+*.swo
+.env
+.env.local
+.env.*.local
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+*.pyzwz
+*.db
+
+We might keep *.sqlite3 twice? Just one. Also .log repeated. Keep single.
+
+Thus produce .gitignore with comments unchanged. But no comments currently. So just the list.
+
+Thus the answer is .gitignore content.<|end|><|start|>assistant<|channel|>final<|message|>```
+# Environment and build artifacts
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+*.db
+# OS generated files
+.DS_Store
+# Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Virtual environments
+.venv/
+# Log and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+# Environment files
+.env
+.env.local
+.env.*.local
+# Python script files
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+*.pyzwz
